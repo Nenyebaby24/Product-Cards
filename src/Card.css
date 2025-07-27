@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    border: 1px solid #ccc;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    background-image: url('./assets/backround-img.jpg');  /* adjust path as needed */
+    background-size: cover;        /* scale image to cover container */
+    background-position: center;   /* center the image */
+    background-repeat: no-repeat;  /* prevent tiling */
+
+    color: #fff; /* make text readable if the background is dark */
+    position: relative;
+    z-index: 1;
+}
+
+.Card-Container{
+   max-width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 100px;
+}
+
+.Card-image{
+    border-radius: 50px;
+    font-size: larger;
+}
+.Card-skill{
+    font-size: 12px;
+    color: black;
+}
+.Card-name{
+    color: black;
+}
+.Card-location{
+    color: black;
+}
+.Card-position{
+    color: black;
+}
