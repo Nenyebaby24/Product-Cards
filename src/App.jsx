@@ -12,6 +12,11 @@ import './ProductCard.css';
 import './Card.css';
 
 function App() {
+  const handleBuy = (productName) => {
+    alert(`You bought ${productName}!`);
+  };
+
+
   return (
     <div className="App">
 
@@ -23,6 +28,8 @@ function App() {
           name="banyagwang"
           price="$5.50"
           description="Your healthy recipe"
+          button="Buy Now"
+          onBuy={handleBuy}
         />
 
         <ProductCard 
@@ -31,6 +38,8 @@ function App() {
           name="Laz"
           price="$7.50"
           description="Your delicious meal"
+          button="Buy Now"
+          onBuy={handleBuy}
         />
 
         <ProductCard 
@@ -39,10 +48,13 @@ function App() {
           name="Sasserstube"
           price="$10.50"
           description="Your healthy meal"
+          button="Buy Now"
+          onBuy={handleBuy}
         />
       </div>
 
       {/* Profile Card Section */}
+      {/*
       <div className="Card-Container">
         <Card 
           img={mypicture}
@@ -52,7 +64,7 @@ function App() {
           position="Position: Front End Developer"
           skill="Skill: HTML, CSS, Bootstrap, JavaScript, React.js"
         />
-      </div>
+      </div>  */}
     </div>
   );
 }
